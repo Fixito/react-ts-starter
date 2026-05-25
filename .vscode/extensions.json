@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
     "dsznajder.es7-react-js-snippets",
     "formulahendry.auto-rename-tag",
     "oxc.oxc-vscode",
