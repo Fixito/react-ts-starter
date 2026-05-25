@@ -39,24 +39,9 @@ importers:
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
-<<<<<<< HEAD
       eslint-plugin-react-you-might-not-need-an-effect:
         specifier: ^0.10.2
         version: 0.10.2(eslint@10.4.0)
-=======
-      eslint-plugin-react-hooks:
-        specifier: ^7.1.1
-        version: 7.1.1(eslint@10.4.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.5.2
-        version: 0.5.2(eslint@10.4.0)
-      eslint-plugin-react-you-might-not-need-an-effect:
-        specifier: ^0.10.2
-        version: 0.10.2(eslint@10.4.0)
-      globals:
-        specifier: ^17.6.0
-        version: 17.6.0
->>>>>>> chore/setup-oxc-tooling
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -776,12 +761,6 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  eslint-plugin-react-you-might-not-need-an-effect@0.10.2:
-    resolution: {integrity: sha512-cqm9DXcsISYZHnFXT5zPH+ITsMx/bYscmq6zIsbtYvei1vj4dZ+BxN9LgoMmjEdm7sTaWxKVRY5IqQRQvau/GQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      eslint: '>=8.40.0'
-
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
@@ -879,13 +858,6 @@ packages:
 
   globals@16.5.0:
     resolution: {integrity: sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==}
-<<<<<<< HEAD
-=======
-    engines: {node: '>=18'}
-
-  globals@17.6.0:
-    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
->>>>>>> chore/setup-oxc-tooling
     engines: {node: '>=18'}
 
   husky@9.1.7:
@@ -1825,11 +1797,6 @@ snapshots:
       eslint: 10.4.0
       globals: 16.5.0
 
-  eslint-plugin-react-you-might-not-need-an-effect@0.10.2(eslint@10.4.0):
-    dependencies:
-      eslint: 10.4.0
-      globals: 16.5.0
-
   eslint-scope@9.1.2:
     dependencies:
       '@types/esrecurse': 4.3.1
@@ -1934,17 +1901,6 @@ snapshots:
       is-glob: 4.0.3
 
   globals@16.5.0: {}
-<<<<<<< HEAD
-=======
-
-  globals@17.6.0: {}
-
-  hermes-estree@0.25.1: {}
-
-  hermes-parser@0.25.1:
-    dependencies:
-      hermes-estree: 0.25.1
->>>>>>> chore/setup-oxc-tooling
 
   husky@9.1.7: {}
 
