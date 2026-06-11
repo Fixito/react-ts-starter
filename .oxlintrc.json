@@ -6,8 +6,8 @@
 
   "categories": {
     "correctness": "error",
-    "style": "warn",
-    "suspicious": "warn"
+    "suspicious": "warn",
+    "style": "warn"
   },
 
   "env": {
@@ -17,23 +17,17 @@
   "ignorePatterns": ["dist"],
 
   "rules": {
+    "func-style": "off",
     "react/react-in-jsx-scope": "off",
     "sort-imports": "off",
+
     "unicorn/filename-case": [
       "error",
       {
-        "cases": { "pascalCase": true, "kebabCase": true },
-        "ignore": ["vite.config.ts"]
+        "cases": { "kebabCase": true, "pascalCase": true },
+        "ignore": ["^\\d"]
       }
-    ],
-    "react-you-might-not-need-an-effect/no-derived-state": "warn",
-    "react-you-might-not-need-an-effect/no-chain-state-updates": "warn",
-    "react-you-might-not-need-an-effect/no-event-handler": "warn",
-    "react-you-might-not-need-an-effect/no-adjust-state-on-prop-change": "warn",
-    "react-you-might-not-need-an-effect/no-reset-all-state-on-prop-change": "warn",
-    "react-you-might-not-need-an-effect/no-pass-live-state-to-parent": "warn",
-    "react-you-might-not-need-an-effect/no-pass-data-to-parent": "warn",
-    "react-you-might-not-need-an-effect/no-initialize-state": "warn"
+    ]
   },
 
   "overrides": [
@@ -43,6 +37,11 @@
         "browser": true
       },
       "rules": {
+        "jsx-a11y/control-has-associated-label": "off",
+        "no-ternary": "off",
+        "no-unused-vars": "off",
+        "react/hook-use-state": "off",
+
         "no-array-constructor": "error",
         "no-case-declarations": "error",
         "no-empty": "error",
@@ -64,8 +63,18 @@
         "typescript/no-unsafe-function-type": "error",
         "typescript/prefer-literal-enum-member": "error",
 
+        "react/jsx-max-depth": ["warn", { "max": 5 }],
         "react/only-export-components": ["error", { "allowConstantExport": true }],
-        "react/rules-of-hooks": "error"
+        "react/rules-of-hooks": "error",
+
+        "react-you-might-not-need-an-effect/no-adjust-state-on-prop-change": "warn",
+        "react-you-might-not-need-an-effect/no-chain-state-updates": "warn",
+        "react-you-might-not-need-an-effect/no-derived-state": "warn",
+        "react-you-might-not-need-an-effect/no-event-handler": "warn",
+        "react-you-might-not-need-an-effect/no-initialize-state": "warn",
+        "react-you-might-not-need-an-effect/no-pass-data-to-parent": "warn",
+        "react-you-might-not-need-an-effect/no-pass-live-state-to-parent": "warn",
+        "react-you-might-not-need-an-effect/no-reset-all-state-on-prop-change": "warn",
       }
     }
   ],
